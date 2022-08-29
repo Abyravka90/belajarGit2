@@ -1,0 +1,30 @@
+@import
+url('https://fonts.googleapis.com/css2?family=qucksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family:'qucksand', sans-serif;
+}
+.bg-dark{
+    background: blue;
+}
+.breadcrumb{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: palevioletred;
+    border-radius: 0px!important;
+}
+.breadcrumb a {
+    color:black;
+}
+breadcrumb-item+.breadcrumb-item::before{
+    display: inline-block;
+    padding-right: 5rem;
+    color: white;
+    content: "/";
+}
+breadcrumb-item.active{
+    color: white;
+}
