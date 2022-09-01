@@ -1,0 +1,35 @@
+@import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-text');
+
+:root {
+
+    font-family: 'Neue Haas Grotesk Text', sans-serif;
+
+}
+body {
+    background-color: #2b4242;
+    color: white;
+}
+
+.navBar {
+    border-style: solid ;
+    border-color: #3f5555;
+    border-radius: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.leftText {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.contentText img{
+    width: 1000px;
+}
+
+.textFooter p{
+    font-size: 12px ;
+}
