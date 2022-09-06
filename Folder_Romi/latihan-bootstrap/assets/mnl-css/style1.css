@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: mediumaquamarine;
+}
+
+.container{
+    border: solid 1px black;
+    width: 300px;
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    background-color: white;
+}
+
+h1{
+    color: mediumaquamarine;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: solid 4px mediumaquamarine;
+}
+
+label{
+    color: mediumaquamarine;
+    font-weight: bold;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+input.tbox{
+    border-bottom: solid 1px mediumaquamarine;
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+    color: mediumaquamarine;
+    background-color: transparent;
+}
+
+input.tbox:focus{
+    color: white;
+    background-color: mediumaquamarine;
+}
+
+
+input[type=reset]{
+    float: left;
+}
+
+input[type=submit]{
+    float: right;
+}
+
+input.btn:hover{
+    background-color: aquamarine;
+    width: 190px;
+}
+
+input.btn{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: mediumaquamarine;
+    transition: 0.5s;
+}
+
+.tbox::-webkit-input-placeholder{
+    color: rgba(102, 205, 170, .7);
+}
