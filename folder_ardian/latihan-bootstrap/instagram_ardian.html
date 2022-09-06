@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- untuk judul di tab pada browser -->
+    <title>Instagram Profile Tugas Ardian</title>
+    <link rel="stylesheet" type="text/css" href="Ardian-JC5-TugasInstagramProfile.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+
+</head>
+<style>
+    body {
+    font-family: 'Segoe UI';            /* font yang digunakan */
+    font-size: 26px;                    /* ukuran font */
+    color: black;                     /* warna font */
+    margin: 0;                          /* nol margin agar tidak ada gap antara body dan isinya */
+}
+
+
+main {
+    background-color: #fafafa;         /* background untuk content / main */
+    margin-top: 10px;
+    /* padding: 60px 290px 0px 290px; */
+}
+
+
+/* styling  agian header*/
+header {
+    background-color: #FFFFFF;
+    align-items: center;                 /* membuat posisi elemen di tengah  */
+    display: grid;                       /* display grid aja ga ada penjelasannya */
+    grid-template-columns: 1fr 1fr 1fr;  /* membuat border untuk batas header dan main  */
+    /* border-bottom: 1px solid #dbdbdb; */
+    max-width: 975px;                    /* membuat 3 line dengan 1 line + 1 line + 1 line */
+    width: 100%;                         /* membuat pembatas / limit widhth*/
+    margin: 0 auto;                      /* dengan margin 0 auto, posisi akan berada ditengah body */
+}
+
+/* tulisan instagram bagian kiri atas */
+.Instagram {
+    font-family: 'Grand Hotel';
+    font-size: 36px;
+}
+/* styling placeholder */
+::-webkit-input-placeholder{
+   text-align: center;
+   color: #8d8d8d;
+   font-weight: 100;
+}
+::-moz-placeholder{
+    text-align: center;
+    color: #8d8d8d;
+    font-weight: 100;   
+}
+
+/* styling search engine */
+.search {
+    border: solid 1px #dbdbdb;
+    background-color: #fafafa;
+    border-radius: 3px;
+    line-height: 26px;
+    width: 220px;
+}
+
+/* styling img pada class icon bagian kanan atas */
+ .icon img {
+    width: 40px;
+    align-items: center
+}
+
+.profile {
+    padding: 60px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(200px, 200px);
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+.fotoProfile {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.profile ul{
+    padding-left: 10px;
+}
+
+.userName {
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.fontButton{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+button {
+    background: 0;
+    border: 1px solid #dbdbdd;
+    border-radius: 3px;
+    line-height: 30px;
+    color: #262626;
+    /* display: inline-block; */
+    padding: 0px 24px;
+}
+
+.picture {
+    width: 293px;
+    height: 293px;
+    object-fit: cover;
+
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100%,100% );
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    max-width: 975px;
+    margin: 0 auto;
+
+}
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    /*untuk menghilangkan jarak tab list*/
+    margin: 0;
+    /*untuk menghilangkan jarak tab list*/
+}
+
+li {
+    display: inline; 
+    margin-right: 25px;
+    font-size: 16px;
+
+}
+
+
+</style>
+<body>
+    <header>
+        <!-- Header; menampilkan bagian atas (logo, search engine, icon) -->
+        
+            <div>
+                <ul style="padding-top: 15px">
+                    <li>
+                        <img src="https://cdn4.iconfinder.com/data/icons/picons-social/57/38-instagram-2-128.png" width="30px" style="position: absolute; padding:7px "> <span class="Instagram"> &nbsp;&emsp;&nbsp;| Instagram</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- search engine -->
+            <div>
+                <ul style="padding: 0px 80px 0px 80px">
+                    <li>
+                        <input type="text" class="search" style="font-family:'Segoe UI', FontAwesome;" placeholder="&#xF002; Search" >
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 3 icon bagian kanan (discover, love, profile) -->
+            <div class="icon">
+                <ul style="padding-top: 15px;  padding-left: 80px">
+                    <li>
+                        <img src="https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-73-128.png">
+                    </li>
+                    <li>
+                        <img src="https://cdn3.iconfinder.com/data/icons/other-icons/48/heart_love-128.png">
+                    </li>
+                    <li>
+                        <img src="https://cdn2.iconfinder.com/data/icons/instagram-ui/48/jee-74-128.png">
+                    </li>
+                </ul>
+            </div>
+            
+    </header>
+    <!-- END OF HEADER -->
+    
+    <!-- bagian biodata -->
+    <main>
+        <hr>
+        <!-- bagian biodata isinya photo profile, username dan info follow -->
+        <div class="profile">
+            <!-- grid pertama (1fr); photo profile -->
+            <img class="fotoProfile" src="assets/image/instagram_ardiaei.jpg">
+            
+            <!-- grid ke dua (2fr); username dan biodata -->
+            <div>
+                <!-- unordered list yang berisi list item; 1.username 2.button edit 3.setting icon -->
+                <ul>
+                    <li><span class="userName">ardiaei_</span>
+                    </li>
+
+                    <li><span style="position: absolute; padding: 7px"><button class="fontButton">Edit Profile</button>&emsp;<span style="position: absolute; padding-top: 1px" ><img src="https://cdn3.iconfinder.com/data/icons/fez/512/FEZ-04-128.png" width="28px"></span></span></li>
+                </ul>
+                
+                <!--  unordered list yang berisi list item; 1.jumlah post 2.followers 3.following -->
+                <ul>
+                    <li>
+                        <span  style="padding-right: 20px;"></span><b>9</b> posts</span></li>
+                    <li>
+                        <b>1320</b> Followers</li>
+                    <li>
+                        <b>1298</b> Following</li>
+                </ul>
+
+                <!--  unordered list yang berisi list item; 1.nama 2.bio -->
+                <ul>
+                    <li>
+                        <b>Ardian Kusuma</b>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        17
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="content">
+            <div>
+                <img src="assets/image/insta4.jpg" class="picture" alt="">
+            </div>
+            <div>
+                <img src="assets/image/insta1.jpg" class="picture" alt="">
+            </div>
+            <div>
+                <img src="assets/image/insta2.jpg" class="picture" alt="">
+            </div>
+        </div>
+
+    <!-- </main> -->
+
+</body>
+
+</html>
