@@ -1,0 +1,16 @@
+<script>
+    var id = prompt('Masukan ID Produk')
+    var harga = parseInt(prompt('Masukan Harga Awal'))
+    var diskon = parseInt(prompt('Masukan Persentase Diskon'))
+
+    var hitungDiskon = {
+        id : this.id,
+        harga : this.harga,
+        diskon : this.diskon,
+        newPrices : function(harga,diskon) {
+            return harga-(harga*(diskon/100))   
+        }
+    }
+
+    alert(hitungDiskon.newPrices(harga, diskon))
+</script>
