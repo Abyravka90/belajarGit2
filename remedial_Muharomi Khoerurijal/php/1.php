@@ -5,5 +5,5 @@ $jenisKelamin = 'L';
 $ttl = 'Tasik/05 Maret 2005';
 $alamat = 'kampoeng Tengah';
 
-echo 'Nama Lengkap: ' , $nama , 'NIK: ' , $nik , 'Jenis Kelamin: ' , $jenisKelamin , 'Tempat/Tanggal Lahir: ' , $ttl , 'Alamat: ' , $alamat;
+echo "Nama Lengkap: " , $nama , "\nNIK: " , $nik , "\nJenis Kelamin: " , $jenisKelamin , "\nTempat/Tanggal Lahir: " , $ttl , "\nAlamat: " , $alamat;
 ?>
