@@ -1,0 +1,14 @@
+<script>
+  var P = prompt("Masukkan nilai P", "");
+  var L = prompt("Masukkan nilai L", "");
+  var T = prompt("Masukkan nilai T", "");
+  var luas = (P * L * T) / 3;
+  window.onload = function () {
+    var btn = document.getElementById("demo");
+    btn.addEventListener("click", myfunction, false);
+    function myFunction() {
+      alert("luas");
+      btn.removeEventListener("click", myFunction, false);
+    }
+  };
+</script>
